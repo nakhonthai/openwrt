@@ -27,9 +27,8 @@ To build your own firmware you need to have access to a Linux, BSD or MacOSX sys
 (case-sensitive filesystem required). Cygwin will not be supported because of
 the lack of case sensitiveness in the file system.
 
+./scripts/feeds update -a && ./scripts/feeds install -a
+make defconfig
+make world
 
-Sunshine!
-	Your OpenWrt Project
-	http://openwrt.org
-
-
+When you finish the compile without any failure, you can find the image (openwrt-sunxi-arm9-suniv-f1c100s-licheepi-nano-ext4-sdcard.img.gz) under ./bin/targets/sunxi/arm9/,
